@@ -30,9 +30,7 @@ class App extends Component {
         const filteredRobot = robots.filter(robot => {
             return robot.name.toLowerCase().includes(searchfield.toLocaleLowerCase());
         })
-        if (!robots.length){
-            return <h1>Loading...</h1> 
-        } else {
+        
             return (
                 <div className='tc'>
                 <h1 className='f2'>RobotFriends</h1>
@@ -42,9 +40,9 @@ class App extends Component {
                 </Scroll>
 
                 </div>
-            )
-        }; 
-    }
+            );
+        }
+    
 }
 
 export default App;
